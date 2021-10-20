@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:plum;
+    width: 24rem;
+
+height: 50rem;
+box-shadow: 10px 10px 15px #e7e8ec;
+position: relative;
+margin: 6% auto;
+border-radius: 1rem;
+font-weight: bolder;
+background-color: 	#FFE4C4;
+padding: 8px;
+color: #e61414;
+text-align: center;
+
+}
+
+.main-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.heading{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#name-box{
+    margin-top: 20px;
+    background: linear-gradient(#FFFAF0, #FFFAF0);
+    margin-bottom: 20px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 19px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#smt-btn{
+    background: 	#FFE4C4;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 25px;
+    color:darkorange;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#smt-btn:hover{
+    background-color: 	#FFE4C4;
+    color: purple;
+    letter-spacing: 5px;
+    cursor: pointer;
+    
+} 
+
+</style>
+
+<body>
+    <header>
+       <div class="main-container">
+	   <h2>RESULT</h2>
+	   <br>
+        <h3><b>Enter your Name and Reg No:</b></h3>
+        <input type="text" id="name-box" placeholder="Name">
+        <input type="text" id="name-box" placeholder="Register Number">
+        <input type="Submit" id="smt-btn" name="" value="RESULT">
+    </div>  
+</br>
+    <div class="heading">
+        <!-- <h1>Your Result</h1> -->
+        <div class="results" id="res"></div>
+    </div>
+    <script src="main.js"></script>
+</header>
+
+</body>
+</html> 
